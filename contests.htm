@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CONTESTS</title>
+    <link rel="stylesheet" href="stylesheet.css">
+  </head><body>
+    <div class="top"><ul>
+        <li><div class="navlinks" id="navlinks">
+        <ul><b>
+          <li><a href="home.htm">Home</a></li>
+          <li><a href="resources.htm">Resources</a></li>
+          <li><a href="bugabooset.htm">Bugabooset</a></li>
+          <li><a href="contests.htm">Contests</a></li>
+          </b></li></ul></div>
+
+          <li><a href="home.htm"><img src="logo.png" width="80" height="80"></li></a></div><br><br><br>
+        <div class="head"><h1>UPCOMING CONTESTS : </h1></div><br>
+      <h2 style="color: #e95065;"><center>CODEFORCES</center></h2>
+      <div class="listq"> S.n.<div class="tab2">Contest name </div><div class="tab2"> Contest date </div><div class="tab2"> Contest duration </div><div class="tab2"> Time left </div></div>
+      <a href="https://codeforces.com/contests"><div class="listq">1<div class="tab1"> Codeforces round 731 (Div. 3) </div><div class="tab1" id="datetime">Jul 10, 2021 20:05:00</div><div class="tab1" id="duration">02:00</div><div class="tab1" id="time-left1"></div></div></a>
+      <a href="https://codeforces.com/contests"><div class="listq">2<div class="tab1"> Codeforces round 732 (Div. 1) </div><div class="tab1" id="datetime">Jul 11, 2021 19:35:00</div><div class="tab1" id="duration">02:30</div><div class="tab1" id="time-left2"></div></div></a>
+      <a href="https://codeforces.com/contests"><div class="listq">3<div class="tab1"> Codeforces round 732 (Div. 2) </div><div class="tab1" id="datetime">Jul 11, 2021 19:35:00</div><div class="tab1" id="duration">02:30</div><div class="tab1" id="time-left3"></div></div></a>
+      <a href="https://codeforces.com/contests"><div class="listq">4<div class="tab1"> Codeforces round 734 (Div. 2) </div><div class="tab1" id="datetime">Aug 1, 2021 20:05:00</div><div class="tab1" id="duration">02:00</div><div class="tab1" id="time-left5"></div></div></a>
+      <a href="https://codeforces.com/contests"><div class="listq">5<div class="tab1"> Codeforces round 734 (Div. 1) </div><div class="tab1" id="datetime">Aug 1, 2021 20:05:00</div><div class="tab1" id="duration">02:00</div><div class="tab1" id="time-left4"></div></div></a>
+      <h2 style="color: #e95065;"><center>CODECHEF</center></h2>
+      <div class="listq"> S.n.<div class="tab2">Contest name </div><div class="tab2"> Contest date </div><div class="tab2"> Contest duration </div><div class="tab2"> Time left </div></div>
+      <a href="https://www.codechef.com/contests/?itm_medium=navmenu&itm_campaign=allcontests_head"><div class="listq">1<div class="tab1"> Codechef July cookoff challenge 2021 </div><div class="tab1" id="datetime">Jul 18, 2021 21:30:00</div><div class="tab1" id="duration">02:30</div><div class="tab1" id="time-left6"></div></div></a>
+      <a href="https://www.codechef.com/contests/?itm_medium=navmenu&itm_campaign=allcontests_head"><div class="listq">2<div class="tab1"> Codechef July Lunchtime 2021 </div><div class="tab1" id="datetime">Jul 31, 2021 19:30:00</div><div class="tab1" id="duration">03:00</div><div class="tab1" id="time-left7"></div></div></a>
+      <a href="https://www.codechef.com/contests/?itm_medium=navmenu&itm_campaign=allcontests_head"><div class="listq">3<div class="tab1"> Codechef July challenge (Div. 3) </div><div class="tab1" id="datetime">Jun 02, 2021 15:00:00</div><div class="tab1" id="duration">10:00:00</div><div class="tab1" id="time-left8"></div></div></a>
+      
+      <script>
+    function setTimer(elem_id, date) {
+    var target_date = new Date(date).getTime();
+    var days, hours, minutes, seconds;
+    var countDownElem = document.getElementById(elem_id);
+    setInterval(function () {
+      var current_date = new Date().getTime();
+      var seconds_left = (target_date - current_date) / 1000;
+      days = parseInt(seconds_left / 86400);
+      seconds_left = seconds_left % 86400;
+      hours = parseInt(seconds_left / 3600);
+      seconds_left = seconds_left % 3600;
+      minutes = parseInt(seconds_left / 60);
+      seconds = parseInt(seconds_left % 60);
+      countDownElem.innerHTML = days + "D:" + hours + "H:" + minutes + "M:" + seconds + "S";
+      if (seconds_left < 0) {
+    countDownElem.innerHTML="Contest is over."
+    }
+      }, 1000);
+     }
+        setTimer("time-left1","Jul 10, 2021 18:05:00");
+        setTimer("time-left2","Jul 11, 2021 19:35:00");
+        setTimer("time-left3","Jul 11, 2021 19:35:00");
+        setTimer("time-left4","Aug 1, 2021 20:05:00");
+        setTimer("time-left5","Aug 1, 2021 20:05:00");
+        setTimer("time-left6","Jul 18, 2021 21:30:00");
+        setTimer("time-left7","Jul 31, 2021 19:30:00");
+        setTimer("time-left8","Jun 30, 2021 15:00:00");
+
+
+</script>     
+  </body>
+</html>

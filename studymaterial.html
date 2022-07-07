@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study_Material</title>
+
+<style>
+    body {
+        background: rgb(39, 37, 37);
+    }
+
+    h1 {
+        color: rgb(44, 32, 32);
+        text-shadow: 1px 1px 4px rgb(255, 255, 255), 0 0 25px rgb(175, 161, 159), 0 0 10px rgb(241, 241, 240);
+        margin-left: 24px;
+        font-family: cursive;
+    }
+
+    .study {
+        color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-between;
+    }
+    .second{
+        margin-right: 50px;
+    }
+
+    .study a {
+        color: aliceblue;
+        text-decoration: none;
+    }
+
+    .books,
+    .material,
+    .coding {
+        padding: 50px;
+        border: 4px solid aliceblue;
+        border-radius: 10px;
+        background-color: rgb(43, 37, 37);
+        font-size: 30px;
+        font-family: cursive;
+        text-align: left;
+        margin-left: 20px;
+        box-shadow: 0 0 10px 0px rgb(4, 250, 229);
+
+    }
+
+    .books a:hover , .material a:hover , .coding a:hover{
+        color: wheat;
+    }
+
+.moveto{
+    color: rgb(204, 208, 211);
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.moveto span{
+    color: aqua;
+    font-weight: bolder;
+}
+
+</style>
+
+<script type="text/javascript">
+		function createCookie(cookieName,cookieValue,daysToExpire)
+        {
+          var date = new Date();
+          date.setTime(date.getTime()+(daysToExpire*24*60*60*1000));
+          document.cookie = cookieName + "=" + cookieValue + "; expires=" + date.toGMTString();
+        }
+		function accessCookie(cookieName)
+        {
+          var name = cookieName + "=";
+          var allCookieArray = document.cookie.split(';');
+          for(var i=0; i<allCookieArray.length; i++)
+          {
+            var temp = allCookieArray[i].trim();
+            if (temp.indexOf(name)==0)
+            return temp.substring(name.length,temp.length);
+       	  }
+        	return "";
+        }
+		function checkCookie()
+        {
+          var user = accessCookie("testCookie");
+          if (user!="")
+        	alert("Welcome Back " + user + "!!!");
+          else
+          {
+            user = prompt("Please enter your name");
+            num = prompt("How many days you want to store your name on your computer?");
+            if (user!="" && user!=null)
+            {
+            createCookie("testCookie", user, num);
+            }
+          }
+        }
+	</script>
+
+</head>
+
+
+<body  onload="checkCookie()">
+
+
+    <h1>First Year Study Material</h1>
+    <br>
+
+
+    <div class="study">
+        <div class="first">
+            <div class="books">
+
+                <a href="https://drive.google.com/file/d/1BdiTL9bi8VxBcZr985CSTYJjmG8f7z6Z/view?usp=sharing"
+                    target="_blank">Get all the first year books</a>
+            </div>
+            <br><br>
+
+            <div class="material">
+
+                <a href="https://drive.google.com/folderview?id=1Rlj40hGZLcA-ECbCTVOWPYE0WE9K8jOp" target="_blank">
+                    Get all the first year notes</a>
+            </div>
+            <br><br>
+
+            <div class="coding">
+
+                <a href="https://github.com/sindresorhus/awesome" target="_blank">Library of all the resources for programmers</a>
+            </div>
+        </div>
+
+        <div class="second">
+            <img src="study.jpg" height="530px" width="600px">
+        </div>
+    </div>
+
+
+<br><br>
+<a href="SVNIT First Year Helpdesk.html" class="moveto">
+Move Back To <span>Home Page</span></a>
+
+<br><br>
+
+
+</body>
+
+</html>

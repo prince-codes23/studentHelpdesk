@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <title>Registration</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="glow">
+            Register With Us
+        </h1>
+        <p>
+            Restless learners change the world !
+        </p>
+
+        <div class="contactbox">
+            <div class="contactleft">
+                <h3 onmouseover="style.color='aqua'" onmouseout="style.color='color: rgba(180, 235, 163, 0.897);'">Registration Form</h3>
+                <form name="myform" action="forms" autocomplete="off">
+                    <div class="inputrow">
+                        <div class="inputgroup">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Your name" name="name">
+                        </div>
+                        <div class="inputgroup">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" placeholder="9009456723" name="phone">
+                        </div>
+                    </div>
+
+                    <div class="inputrow">
+                        <div class="inputgroup">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="nick@gmail.com" name="email">
+                        </div>
+                        <div class="inputgroup">
+                            <label for="branch">Branch</label>
+                            <input type="text" id="branch" placeholder="Computer Science Engineering" required>
+                        </div>
+                    </div>
+
+                    <label for="message">Message / Query</label>
+                    <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message / Query"></textarea>
+
+
+                    <button type="submit" onclick="validate()">Submit</button>
+
+                </form>
+
+                <script>
+                    function validate() {
+                        var name = document.getElementById("name").value;
+                        var phone = document.getElementById("phone").value;
+                        var x = document.getElementById("email").value;
+                        var atposition = x.indexOf("@");
+
+            
+
+                        if (name == null || name == "") {
+                            alert("Name can't be blank!");
+                        }
+                        else if (phone.length < 10) {
+                            alert("Phone number must be 10 digits long!");
+                        }
+                        if (atposition < 1) {
+                            alert("Please enter a valid e-mail address!");
+                        }
+                    }
+
+
+                    function loadpage() {
+                        alert("Proceed to Registration Page");
+                    }
+
+                </script>
+
+            </div>
+
+            <div class="contactright">
+                <img src="login.jpg" onload="loadpage()" alt="" style="height: 100%; width: 100%;">
+
+
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+
+<a href="SVNIT First Year Helpdesk.html" class="moveto">
+Move Back To <span>Home Page</span></a>
+
+<br><br><br><br>
+
+
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+body {
+  background-color: #333333;
+}
+h3 {
+  color: #e5c453;
+}
+.toppane {
+  background-color: black;
+  background-size: 100% 100%;
+  background-image: url(codersrank.png);
+  color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: Oswald;
+
+  text-align: center;
+  box-shadow: 0px 0px 60px 0px #46bddf;
+  border-collapse: collapse;
+}
+nav {
+  display: flex;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 20px;
+  align-items: center;
+}
+.navlinks {
+  flex: 1;
+  text-align: right;
+}
+.top ul {
+  display: inline;
+  position: relative;
+}
+.navlinks ul li {
+  list-style: none;
+  display: inline-block;
+  padding-left: 30px;
+  position: relative;
+}
+.navlinks ul li a {
+  color: snow;
+  text-decoration: none;
+  font-size: 20px;
+  text-shadow: black;
+  padding: 10px 15px 10px 15px;
+}
+
+.navlinks ul li::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background: #e95065;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.navlinks ul li:hover::after {
+  width: 100%;
+}
+.intro {
+  height: 100%;
+  width: 60%;
+  background-color: #121212;
+  color: #b3b8bc;
+  text-align: center;
+  font-family: Comic Sans MS;
+}
+.intro:hover {
+  box-shadow: 0px 0px 60px 0px #46bddf;
+}
+img {
+  opacity: 1;
+  margin-left: 60px;
+  box-shadow: 0 0 60px 0px #46bddf;
+}
+img:hover {
+  box-shadow: 0px 0px 60px 0px #e95065;
+}
+.bd {
+  background-color: black;
+  color: white;
+  font-family: Comic Sans MS;
+  width: 100%;
+  height: 20px;
+  text-align: center;
+}
+.about {
+  display: flex;
+  margin: 2%;
+  justify-content: space-between;
+}
+.about1 {
+  border-radius: 20px;
+  flex-basis: 100%;
+  text-align: center;
+  padding: 10px;
+  margin: 30px;
+  margin-top: 0px;
+  font-size: 20px;
+  background-color: #121212;
+  color: #46bddf;
+  transition: 1s;
+}
+.about1:hover {
+  box-shadow: 0px 0px 60px 0px #e95065;
+}
+.head {
+  background-color: #121212;
+}
+.head h1 {
+  text-align: center;
+  color: #46bddf;
+  box-shadow: none;
+}
+.tab {
+  display: inline-block;
+  margin-left: 200px;
+}
+.listq {
+  border-radius: 20px;
+  flex-basis: 100%;
+  padding: 10px;
+  margin: 30px;
+  margin-top: 0px;
+  font-size: 20px;
+  background-color: #121212;
+  color: #46bddf;
+  transition: 1s;
+}
+.tab1 {
+  display: inline-block;
+  margin-left: 100px;
+}
+.tab2 {
+  display: inline-block;
+  margin-left: 160px;
+}
